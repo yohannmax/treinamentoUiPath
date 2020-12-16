@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SeletoresDinâmicos" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,1955" sap2010:WorkflowViewState.IdRef="SeletoresDinâmicos_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SeletoresDinâmicos" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1174,1302" sap2010:WorkflowViewState.IdRef="SeletoresDinâmicos_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="26">
       <x:String>System.Activities</x:String>
@@ -30,7 +30,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="17">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -48,15 +48,20 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SeletoresDinâmicos" sap:VirtualizedContainerService.HintSize="558,1890" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SeletoresDinâmicos" sap:VirtualizedContainerService.HintSize="384,1097" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="var_intContador">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="2" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="2" Name="var_intContador" />
       <Variable x:TypeArguments="s:String[]" Name="var_arrComentarios" />
       <Variable x:TypeArguments="scg:List(x:String)" Name="var_listComentarios" />
       <Variable x:TypeArguments="x:Boolean" Name="var_booSair" />
@@ -66,7 +71,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="516,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="342,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:List(x:String)">[var_listComentarios]</OutArgument>
       </Assign.To>
@@ -74,7 +79,7 @@
         <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String)]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="516,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+    <Assign sap:VirtualizedContainerService.HintSize="342,60" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[var_arrComentarios]</OutArgument>
       </Assign.To>
@@ -82,7 +87,7 @@
         <InArgument x:TypeArguments="s:String[]">[{"primeiraInfo","segundaInfo"}]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="516,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="342,60" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[var_intContador]</OutArgument>
       </Assign.To>
@@ -90,7 +95,7 @@
         <InArgument x:TypeArguments="x:Int32">1</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="516,844" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+    <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="342,51" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
       <ui:InterruptibleDoWhile.Body>
         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="480,679" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
@@ -159,10 +164,16 @@
         </Sequence>
       </ui:InterruptibleDoWhile.Body>
       <ui:InterruptibleDoWhile.Condition>
-        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="var_booSair = false" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="var_booSair = false" />
       </ui:InterruptibleDoWhile.Condition>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:InterruptibleDoWhile>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="516,287" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[var_arrComentarios]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="342,287" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[var_arrComentarios]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
@@ -179,7 +190,7 @@
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="516,287" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[var_listComentarios]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="342,287" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[var_listComentarios]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>

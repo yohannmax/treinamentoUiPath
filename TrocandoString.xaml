@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="arg_strTexto" Type="InOutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1074,830</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1174,830</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -26,6 +26,10 @@
       <x:String>System.Net.Mail</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
       <x:String>UiPath.Core</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
