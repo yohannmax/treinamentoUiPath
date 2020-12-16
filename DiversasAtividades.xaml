@@ -1,0 +1,269 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DiversasAtividades" sap:VirtualizedContainerService.HintSize="953,1991" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="DiversasAtividades" sap:VirtualizedContainerService.HintSize="476,1786" sap2010:WorkflowViewState.IdRef="Sequence_19">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="var_strSelect" />
+      <Variable x:TypeArguments="ui:Image" Name="var_imgScreen" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="C:\Users\YOHANNGABRIELOLIANIF\AppData\Roaming\Spotify\Spotify.exe" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="StartProcess_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:StartProcess>
+    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'spotify.exe Spotify'" FileName="C:\Users\YOHANNGABRIELOLIANIF\AppData\Roaming\Spotify\spotify.exe" sap:VirtualizedContainerService.HintSize="434,229" sap2010:WorkflowViewState.IdRef="OpenApplication_2" InformativeScreenshot="36c0faadd0e98dd891ecb2d65f3599d5" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify Premium' /&gt;">
+      <ui:OpenApplication.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_24">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenApplication.Body>
+    </ui:OpenApplication>
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'uipath.studio.exe prj_p...'" sap:VirtualizedContainerService.HintSize="434,260" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="3e23ad995a1b00df12999607bcffad9b" Selector="&lt;wnd app='uipath.studio.exe' cls='HwndWrapper*' title='prj_primeiroProjeto - UiPath Studio Pro Community' /&gt;">
+      <ui:WindowScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_26">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MinimizeWindow Window="{x:Null}" DisplayName="Minimize Window" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MinimizeWindow_1" />
+          </Sequence>
+        </ActivityAction>
+      </ui:WindowScope.Body>
+    </ui:WindowScope>
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SysListView32'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0e3aebd6-5539-4e08-bab1-782206e4553d" InformativeScreenshot="9b7deaf1bbe892dda8e5da2a3f0c5e5c" Selector="&lt;wnd app='explorer.exe' cls='Progman' title='Program Manager' /&gt;&lt;wnd aaname='Desktop' cls='SysListView32' title='FolderView' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click 'push button  Spotify'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c40779ba-bddc-4b78-bb03-b0a0347c748d" InformativeScreenshot="ee97a472fbdeff01f9f4638435b95d2f" Selector="&lt;wnd app='explorer.exe' cls='Progman' title='Program Manager' /&gt;&lt;wnd aaname='Desktop' cls='SysListView32' title='FolderView' /&gt;&lt;ctrl name='Desktop' role='list' /&gt;&lt;ctrl name='Trabalho' role='list item' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[var_strSelect]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">aasdasdasd</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  Country'" sap:VirtualizedContainerService.HintSize="434,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[var_strSelect]">
+      <ui:SelectItem.Items>
+        <scg:List x:TypeArguments="x:String" Capacity="50">
+          <x:String>Andorra</x:String>
+          <x:String>Angola</x:String>
+          <x:String>Antigua and Barbuda</x:String>
+          <x:String>Armenia</x:String>
+          <x:String>Argentina</x:String>
+          <x:String>Australia</x:String>
+          <x:String>Austria</x:String>
+          <x:String>Azerbaijan</x:String>
+          <x:String>Aruba</x:String>
+          <x:String>Bahrain</x:String>
+          <x:String>Bahamas</x:String>
+          <x:String>Barbados</x:String>
+          <x:String>Bangladesh</x:String>
+          <x:String>Belarus</x:String>
+          <x:String>Belgium</x:String>
+          <x:String>Belize</x:String>
+          <x:String>Benin</x:String>
+          <x:String>Bermuda</x:String>
+          <x:String>Bhutan</x:String>
+          <x:String>Bolivia</x:String>
+          <x:String>Bonaire</x:String>
+          <x:String>Bosnia and Herzegovina</x:String>
+          <x:String>Botswana</x:String>
+          <x:String>Bouvet Island</x:String>
+          <x:String>Brazil</x:String>
+          <x:String>British Indian Ocean Territory</x:String>
+          <x:String>Bulgaria</x:String>
+          <x:String>Brunei Darussalam</x:String>
+          <x:String>Burkina Faso</x:String>
+          <x:String>Burundi</x:String>
+          <x:String>Cambodia</x:String>
+          <x:String>Cape Verde</x:String>
+          <x:String>Canada</x:String>
+          <x:String>Cameroon</x:String>
+          <x:String>Cayman Islands</x:String>
+          <x:String>Central African Rep</x:String>
+          <x:String>Chad</x:String>
+          <x:String>Chile</x:String>
+          <x:String>China (Mainland)</x:String>
+          <x:String>Christmas Island</x:String>
+          <x:String>Cocos Islands</x:String>
+          <x:String>Colombia</x:String>
+          <x:String>Comoros</x:String>
+          <x:String>Congo</x:String>
+          <x:String>Cook Islands</x:String>
+          <x:String>Costa Rica</x:String>
+          <x:String>Croatia</x:String>
+          <x:String>Cote d'Ivoire</x:String>
+          <x:String>Curacao</x:String>
+          <x:String>Cuba</x:String>
+        </scg:List>
+      </ui:SelectItem.Items>
+      <ui:SelectItem.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d55e81cb-ed7a-46fd-90c1-2e186bcf6639" InformativeScreenshot="455522a7b63e77e1272a0e64458ea1dc" Selector="&lt;html app='chrome.exe' title='Reboot Work Festival | UiPath' /&gt;&lt;webctrl tag='SELECT' /&gt;" TimeoutMS="1500">
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SelectItem.Target>
+    </ui:SelectItem>
+    <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'Intermediate D3D Window'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[var_imgScreen]">
+      <ui:TakeScreenshot.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="df8c256f-51a0-40b0-98d5-7f5b6298533a" InformativeScreenshot="f35ae2b24ac55643e58618d47cc0894f" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Reboot Work Festival | UiPath - Google Chrome' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TakeScreenshot.Target>
+    </ui:TakeScreenshot>
+    <ui:SaveImage DisplayName="Save Image" FileName="input\img.png" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[var_imgScreen]" />
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe Reboot'" sap:VirtualizedContainerService.HintSize="434,154" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3aa5a209-2aac-4bc3-b08f-c0e8010cf279" Selector="&lt;wnd app='explorer.exe' cls='Progman' title='Program Manager' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+  </Sequence>
+</Activity>
